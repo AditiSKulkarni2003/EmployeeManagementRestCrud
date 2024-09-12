@@ -1,0 +1,139 @@
+
+GET  http://localhost:8089/EmployeeRestCrud/employees
+
+###
+GET http://localhost:8089/EmployeeRestCrud/employees/101
+###
+
+POST http://localhost:8089/EmployeeRestCrud/employees
+Content-Type: application/json
+
+{
+  "empName": "SK",
+  "empCompanyName": "WGS",
+  "empBloodGroup": "A+",
+  "address": {
+    "buildingName": "Building A",
+    "city": "Pune",
+    "pinCode": "411040",
+    "mobNo": "1234567890"
+  },
+  "gcmLevel": "4",
+  "dassId": "D12345",
+  "empType": "ConsultantDelivery",
+  "consultingLevel": "Intermediate",
+  "leadProjects": "Project X"
+}
+###
+
+PUT http://localhost:8089/EmployeeRestCrud/employees/104
+Content-Type: application/json
+
+{
+"empName": "PS",
+"empCompanyName": "WGS",
+"empBloodGroup": "AB+",
+"address": {
+"buildingName": "AAA",
+"city": "Pune",
+"pinCode": "41105",
+"mobNo": "8492517854"
+},
+"gcmLevel": "5",
+"dassId": "1234ABCD",
+"empType": "ConsultantDelivery",
+"consultingLevel": "Lead",
+"leadProjects": "Project C, Project D"
+}
+
+###
+DELETE http://localhost:8089/EmployeeRestCrud/employees/103
+###
+
+
+#
+#POST http://localhost:8089/EmployeeRestCrud/employees
+#Content-Type: application/json
+#
+#{
+#  "empName": "AT",
+#  "empCompanyName": "WGS",
+#  "empBloodGroup": "B+",
+#  "address": {
+#    "buildingName": "Building B",
+#    "city": "Amravati",
+#    "pinCode": "400001",
+#    "mobNo": "9976543210"
+#  },
+#  "gcmLevel": "3",
+#  "dassId": "W12345F",
+#  "empType": "AssociateConsultantDelivery",
+#  "skillSet": "Java, Angular",
+#  "projectRole": "Software Engineer",
+#  "reportsTo": "Senior Consultant",
+
+#}
+####
+#PUT http://localhost:8089/EmployeeRestCrud/employees/106
+#Content-Type: application/json
+#
+#{
+#  "empName": "AT",
+#  "empCompanyName": "WGS",
+#  "empBloodGroup": "B+",
+#  "address": {
+#    "buildingName": "Building B",
+#    "city": "Amravati",
+#    "pinCode": "400001",
+#    "mobNo": "9976543210"
+#  },
+#  "gcmLevel": "3",
+#  "dassId": "W12345F",
+#  "empType": "AssociateConsultantDelivery",
+#  "skillSet": "Java, Angular",
+#  "projectRole": "Developer",
+#  "reportsTo": "Senior Consultant",
+#}
+####
+
+#
+#POST http://localhost:8089/EmployeeRestCrud/employees
+#Content-Type: application/json
+#
+#{
+#  "empName": "PG",
+#  "empCompanyName": "WGS",
+#  "empBloodGroup": "AB+",
+#  "address": {
+#    "buildingName": "ABC",
+#    "city": "Indore",
+#    "pinCode": "94105",
+#    "mobNo": "1234567890"
+#  },
+#  "gcmLevel": "8",
+#  "dassId": "W12345D",
+#  "empType": "Manager",
+#  "teamSize": "20",
+#  "location": "Pune"
+#}
+####
+#
+#PUT http://localhost:8089/EmployeeRestCrud/employees/107
+#Content-Type: application/json
+#
+#{
+#  "empName": "PG",
+#  "empCompanyName": "WGS",
+#  "empBloodGroup": "AB+",
+#  "address": {
+#    "buildingName": "ABC",
+#    "city": "Indore",
+#    "pinCode": "94105",
+#    "mobNo": "1234567890"
+#  },
+#  "gcmLevel": "8",
+#  "dassId": "W12345D",
+#  "empType": "Manager",
+#  "teamSize": "25",
+#  "location": "Pune"
+#}
